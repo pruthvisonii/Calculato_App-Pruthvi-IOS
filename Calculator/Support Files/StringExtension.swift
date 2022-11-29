@@ -1,18 +1,8 @@
-//
-//  StringExtension.swift
-//  Calculator
-//
-//  Created by Andrea Vultaggio on 24/10/2017.
-//  Copyright © 2017 Andrea Vultaggio. All rights reserved.
-//
+
 
 import Foundation
 
-/*
- * Useful functions for the manipulation of the strings (values) which we put on the calculator display.
- * Instead of using the NumberFormatter object I preferred to format the strings manually and make a simple exercise
- * on doing some extensions.
- */
+
  
  public extension String {
     
