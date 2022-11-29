@@ -4,7 +4,7 @@ import Foundation
 
 struct CalculatorBrain {
     
-    //MARK: Variables
+    // Variables
     
     private var accumulator: Double?
     private var pendingBinaryOperation: PendingBinaryOperation?
@@ -13,7 +13,7 @@ struct CalculatorBrain {
     var description = ""
     var result: Double? { get { return accumulator } }
     
-    //MARK: Enumerations
+    // Enumerations
     
     private enum Operation {
         case constant(Double)
@@ -34,7 +34,7 @@ struct CalculatorBrain {
          "=" : .result
     ]
     
-    //MARK: Embedded struct
+    // Embedded struct
 
     private struct PendingBinaryOperation {
         let function: (Double, Double) -> Double
@@ -45,7 +45,7 @@ struct CalculatorBrain {
         }
     }
     
-    //MARK: Functions
+    // Functions
     
     private mutating func performPendingBinaryOperation() {
         if pendingBinaryOperation != nil && accumulator != nil {
