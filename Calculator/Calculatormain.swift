@@ -1,10 +1,4 @@
-//
-//  CalculatorBrain.swift
-//  Calculator
-//
-//  Created by Andrea Vultaggio on 17/10/2017.
-//  Copyright © 2017 Andrea Vultaggio. All rights reserved.
-//
+
 
 import Foundation
 
