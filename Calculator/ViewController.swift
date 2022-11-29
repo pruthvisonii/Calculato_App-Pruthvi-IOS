@@ -1,23 +1,16 @@
-//
-//  ViewController.swift
-//  Calculator
-//
-//  Created by Andrea Vultaggio on 17/10/2017.
-//  Copyright © 2017 Andrea Vultaggio. All rights reserved.
-//
 
 import UIKit
 import DeviceKit
 
 class ViewController: UIViewController {
     
-    //MARK: Outlets
+    // Outlets
     
     @IBOutlet weak var sequence: UILabel!
     @IBOutlet weak var cornerView: UIView!
     @IBOutlet weak var display: UILabel!
     
-    //MARK: Variables
+    // Variables
     
     private var brain = CalculatorBrain()
     private var userIsInTheMiddleOfTyping = false
@@ -44,7 +37,7 @@ class ViewController: UIViewController {
         return false
     }
     
-    //MARK: UIVIew Delegate
+    // UIVIew Delegate
     
     override func viewDidLoad() {
         // round the corners of the calculator on iPhones with the notch.
@@ -54,7 +47,7 @@ class ViewController: UIViewController {
         } 
     }
     
-    //MARK: IBAction(s)
+    // IBAction(s)
     
     @IBAction func touchDigit(_ sender: UIButton) {
         guard let digit = sender.currentTitle else { return }
